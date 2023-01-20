@@ -51,9 +51,7 @@
     "Website"
   ],
   "author": "Ahmat Davit Ari Dani",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Davitaridani/my-project-1-reactJS/issues"
-  },
-  "homepage": "https://github.com/Davitaridani/my-project-1-reactJS#readme"
+  "license": "ISC"
+
+ 
 }
