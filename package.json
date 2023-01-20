@@ -34,5 +34,24 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Davitaridani/my-project-1-reactJS.git"
+  },
+  "keywords": [
+    "React",
+    "Js",
+    "Portfolio",
+    "Website"
+  ],
+  "author": "Ahmat Davit Ari Dani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Davitaridani/my-project-1-reactJS/issues"
+  },
+  "homepage": "https://github.com/Davitaridani/my-project-1-reactJS#readme"
 }
