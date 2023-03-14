@@ -32,7 +32,7 @@ const About = () => {
             <div className="text-about text-center">
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere earum, quod nulla accusantium laboriosam quia temporibus voluptatibus veniam aut doloribus.</p>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam explicabo dolorum voluptatem adipisci hic sit aperiam perferendis ea esse, consequatur, temporibus delectus est possimus inventore fuga, vitae quam. Odit corporis temporibus voluptatibus veniam aut doloribus consequatur dolorum rerum optio architecto.</p>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique pariatur sapiente cumque deleniti, accusamus ipsam molestiae natus dolorem dicta ipsum debitis aspernatur aut perferendis, sint totam iste necessitatibus quis eius facere enim suscipit. Veniam, voluptatem et ullam laboriosam iste nihil debitis cum praesentium, corporis aliquam saepe minima consectetur molestiae!</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique pariatur sapiente cumque deleniti, accusamus ipsam molestiae natus dolorem dicta ipsum debitis aspernatur aut perferendis, sint totam iste necessitatibus quis eius facere enim suscipit. Veniam, voluptatem et ullam laboriosam iste nihil debitis cum praesentium, corporis aliquam saepe minima !</p>
             </div>
           </Col>
         </Row>
