@@ -1,0 +1,41 @@
+
+@use "globals";
+$colorText: #008268;
+$mainColorText : #022044;
+
+.card-products {
+	margin-bottom: 50px;
+	.img-product {
+		text-align: center;
+		overflow: hidden;
+		:hover {
+			transform: scale(1.2);
+			border-radius: 10px;
+		}
+		img {
+			height: 250px;
+			object-fit: contain;
+			border-radius: 2px;
+			cursor: pointer;
+			transform: scale(1);
+			transition: 0.4s ease-in-out;
+		}
+	}
+	.card-info {
+		.product-title {
+			margin: 15px 0 20px;
+			h3 {
+				font-size: 18px;
+				font-weight: 600;
+				color: $mainColorText;
+			}
+		}
+		.btn-card {
+			border: 0;
+			color: #fff;
+			font-weight: 600;
+			background-color: $colorText;
+			padding: 6px 17px;
+		}
+	}
+}

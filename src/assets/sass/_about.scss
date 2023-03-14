@@ -1,0 +1,56 @@
+@use "globals";
+
+$colorText: #008268;
+$mainColorText : #022044;
+
+.container {
+	.tilte {
+		margin-bottom: 25px;
+		h3 {
+			font-size: 25px;
+			font-weight: 600;
+			color: $colorText;
+		}
+	}
+	.row {
+		.text-about {
+			margin-bottom: 80px;
+			p:nth-child(1) {
+				font-weight: 500;
+				margin-bottom: 15px;
+			}
+		}
+		.card-about {
+			margin-bottom: 80px;
+			.card {
+				background-image: linear-gradient(rgb(239, 239, 239), rgb(252, 252, 252));
+				padding: 23px;
+				height: 100%;
+				:hover {
+					box-shadow: none;
+					transform: none;
+				}
+				.icon {
+					margin-bottom: 25px;
+					font-size: 30px;
+					background-color: hsla(136, 58%, 53%, 0.639);
+					color: #fff;
+					padding: 10px;
+					border-radius: 50%;
+					display: inline-block;
+					line-height: 0;
+				}
+				.items-text {
+					.tilte-card {
+						margin-bottom: 13px;
+						h3 {
+							font-size: 18px;
+							color: #000;
+							font-weight: 600;
+						}
+					}
+				}
+			}
+		}
+	}
+} 

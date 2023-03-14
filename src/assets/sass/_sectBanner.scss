@@ -1,0 +1,37 @@
+@use "globals";
+
+$colorText: #008268;
+$mainColorText : #022044;
+$fontRoboto: 'Roboto', sans-serif;
+
+// Banner Contact & About
+.banner-contact,
+.banner-about {
+	margin-bottom: 25px;
+	.container {
+		.img-banner {
+			img {
+				height: 75vh;
+				object-position: 55% 45%	;
+				object-fit: cover;
+			}	
+		}
+	}
+	.container-fluid {
+		.title-banner {
+			z-index: -99;
+			position: relative;
+			background-color: $colorText;
+			height: 25vh;
+			bottom: 55px;
+			h3 {
+				position: relative;
+				top: 100px;
+				font-size: 25px;
+				letter-spacing: 1px;
+				color: #fff;
+				font-weight: 600;
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+@use "globals";
+
+$colorText: #008268;
+
+.filter-product {
+	padding: 0 0 50px;
+	.container {
+		.row {
+			border: 1px solid #d1d1d1;
+			border-left: 0;
+			border-right: 0;
+			margin: 0 20px ;
+			align-items: center;
+			.filter-by {
+				padding: 7px 0;
+				column-gap: 15px;
+				h3 {
+					font-size: 16px;
+					color: $colorText;
+					font-weight: 600;
+					margin-bottom: 0;
+				}
+				select {
+					padding: 2px 7px;
+					border-radius: 5px;
+					font-size: 17px;
+				}
+			}
+			.btn-search {
+				border: 1px solid #d1d1d1;
+				display: flex;
+				justify-content: space-between;
+				cursor: pointer;
+				width: 100%;
+				border: 1px solid #d1d1d1;
+				input {
+					background: transparent;
+					width: 100%;
+					padding-left: 10px;
+					border: 1px solid #d1d1d1;
+					outline: none;
+					&:focus {
+						border: .5px solid #008268;
+					}
+				}
+				span {
+					background-color: #008268;
+					color: #fff;
+					padding: 3px 4px;
+					font-size: 22px;
+					line-height: 0;
+				}
+			}
+		}
+	}
+}
+
+

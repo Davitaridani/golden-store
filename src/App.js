@@ -1,17 +1,11 @@
-import "./App.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import MainLayout from "./components/layouts/MainLayout";
 
-import Home from "./home/Home.js";
-
-import Contact from "./contact/Contact";
+import "./assets/sass/custom.css";
 
 function App() {
-  return (
-    <div className="App">
-      <Home />
-
-      <Contact />
-    </div>
-  );
+  return <MainLayout />;
 }
 
 export default App;

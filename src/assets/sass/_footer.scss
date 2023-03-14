@@ -1,0 +1,157 @@
+@use "globals";
+
+$colorText: #008268;
+
+.footer {
+
+	
+	.bg-gradient {
+		background: linear-gradient(276deg, rgba(44,161,75,0) 0%, rgba(44,161,75,0.33657212885154064) 41%, rgba(44,161,75,0.8407738095238095) 63%, rgba(44,161,75,1) 85%) !important;
+		margin-bottom: 70px;
+		.row {
+			.text-info {
+				color: #fff !important;
+				.title {
+					h3 {
+						font-size: 30px;
+						font-weight: 400;
+						span {
+							font-weight: 600 !important;
+							display: block;
+							letter-spacing: 1.5px;
+						}
+					}
+					p {
+						padding-right: 70px;
+					}
+				}
+				.icon-sosmed {
+					span {
+						line-height: 0;
+						padding-right: 5px;
+						font-size: 35px;
+					}
+					p {
+					letter-spacing: 2px;
+					font-size: 14px;
+					font-weight: 600;
+						a {
+							letter-spacing: 0 !important;
+							font-size: 14px;
+							font-weight: 700;
+						}
+					}
+				}
+			}
+			.img-gradient {
+				img {
+					height: 375px;
+					// padding: 20px;
+					object-fit: cover;
+				}
+			}
+		}
+	}	
+
+	// Section OurCustomer
+	.sect-our-customers {
+		.container {
+			.title {
+				h3 {
+					color: $colorText;
+					font-size: 20px;
+					font-weight: 700;	
+					margin-bottom: 20px;
+				}
+				hr {
+					width: auto;
+					margin: 0;
+					text-align: center;
+					color: #adadad;
+				}
+			}
+			.row {
+				
+				.mySwiper {
+					padding: 30px;
+					.swiper-wrapper {
+						display: flex;
+						align-items: center ;
+						justify-content: center;
+						.swiper-slide {
+							text-align: center;
+							margin-right: 0 !important;
+							img {
+								width: 100px;
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Footer Top
+	.foot-top {
+		.items-text {
+			height: 220px;
+			h3 {
+				font-size: 17px;
+				font-weight: 700;
+				letter-spacing: 1px;
+				color: $colorText;
+				margin-bottom: 15px;
+			}
+			.item-menu {
+				.nav-link {
+					padding: 4px 0;
+					font-size: 15px;
+					color: #5e5e5e;
+					font-weight: 500;
+					span {
+						margin-right: 10px;
+						line-height: 0;
+						font-size: 19px;
+						color: #333;
+						p {
+							font-size: 15px;
+							color: #5e5e5e;
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// Footer Bottom
+	.foot-bottom {
+		.container {
+			hr {
+				margin: 0 ;
+			}
+			.row {
+				padding: 15px 0;
+				.items-foot {
+					.nav-link {
+						img {
+							margin-right: 10px;
+							height: 30px;
+							width: 30px;
+						}
+						font-size: 16px;
+						font-weight: 700;
+					}
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+			.text-by-web  {
+				padding: 20px 0;
+			}
+		}
+	}
+}
+
