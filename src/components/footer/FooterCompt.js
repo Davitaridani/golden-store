@@ -33,7 +33,11 @@ const FooterCompt = () => {
       <section className="">
         <Container className="bg-gradient">
           <Row>
-            <Col lg="6" sm="12" className="d-flex ps-5 align-items-center">
+            <Col
+              lg="6"
+              sm="12"
+              className="d-flex ps-5 align-items-center info-sosmed"
+            >
               <div className="text-info">
                 <div className="title">
                   <h3>
@@ -208,8 +212,7 @@ const FooterCompt = () => {
                 </Link>
                 <p className="mb-0">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex
-                  temporibus repudiandae nobis non, eveniet ratione hic. Modi
-                  tempore sed molestiae.
+                  temporibus repudiandae.
                 </p>
               </div>
             </Col>
