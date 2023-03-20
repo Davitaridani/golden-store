@@ -57,9 +57,7 @@ const Home = () => {
 						></div>
 						<SwiperSlide>
 							<div className="text-banner">
-
 								<h3 className="title text-capitalize" data-swiper-parallax="-800">
-
 									Ingin cari produk dijamin  <br /> kualitasnya? Kunjungi toko kami!
 								</h3>
 								<div className="text" data-swiper-parallax="-200">
@@ -70,7 +68,7 @@ const Home = () => {
 									</p>
 								</div>
 								<div className="link d-flex align-items-center">
-									<Link to="/product">Lihat Product
+									<Link to="/product">View Product
 										<span>
 											<iconify-icon icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon></span>
 									</Link>
@@ -97,7 +95,6 @@ const Home = () => {
 						</SwiperSlide>
 						<SwiperSlide>
 							<div className="text-banner">
-
 								<h3 className="title text-capitalize" data-swiper-parallax="-800">
 									Follow akun sosmed kami! <br /> Dapatkan penawaran menarik.
 								</h3>

@@ -5,7 +5,6 @@ import SectionBanner from "../components/UI/SectionBanner";
 import imgAbout from "../assets/img/img-about.jpg";
 import Helmet from "../components/Helmet/Helmet";
 
-
 const About = () => {
   return (
     <Helmet title="About">

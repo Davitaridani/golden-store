@@ -10,7 +10,7 @@ const ListKategoryProductCompt = () => {
           {producstIcon.map((item) => (
             <Col
               lg="2"
-              className="justify-content-center items-kategory-product text-center"
+              className="justify-content-center items-kategory-product text-center d-inline-block col-6 mb-3"
               key={item.id}
             >
               <div className="icon-product">

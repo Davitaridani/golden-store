@@ -39,3 +39,55 @@ $mainColorText : #022044;
 		}
 	}
 }
+
+// Media Query
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+
+@include responsive(mobile) {
+	.card-products {
+		margin-bottom: 40px;
+		.img-product {
+		
+			border-radius: 5px;
+			img {
+				height: auto;
+				object-fit: contain;
+				transform: scale(1);
+				transition: 0.4s ease-in-out;
+			}
+		}
+		.card-info {
+			
+			.btn-card {
+				border: 0;
+				color: #fff;
+				font-weight: 600;
+				background-color: $colorText;
+				padding: 6px 17px;
+				font-size: 15px;
+			}
+		}
+	}
+}
