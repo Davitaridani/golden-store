@@ -7,12 +7,9 @@ $colorText: #008268;
 	.container {
 		.img-banner {
 			img {
-
 				height: 75vh !important;
-				// background: url("../img/img-about.jpg") center;
 				background-repeat: no-repeat;
 				background-size: cover;
-				
 				background-position: top;
 				z-index: 99;
 			}
@@ -65,6 +62,77 @@ $colorText: #008268;
 					font-size: 40px;
 					margin-bottom: 20px;
 					line-height: 0;
+				}
+			}
+		}
+	}
+}
+
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.sect-2-contact {
+		.container {
+			hr {
+				margin: 30px 0;
+			}
+			.item-text {
+				h3 {
+					font-size: 18px;
+				}
+				p {
+					font-size: 15px;
+					margin-bottom: 20px; 
+				}
+			}
+			.items-whatsapp {
+				a {
+					.icon {
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
+					span {
+						font-size: 15px;
+					}
+					p {
+						font-size: 14px;
+					}
+				}
+			}
+			.items-location {
+				margin-bottom: 80px;
+				h3 {
+					font-size: 18px;
+				}
+				a {
+					p {
+						font-size: 14px;
+					}
+					.icon {
+						font-size: 25px;
+						margin-bottom: 10px;
+					}
 				}
 			}
 		}

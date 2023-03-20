@@ -102,6 +102,10 @@ $fontRoboto: 'Roboto', sans-serif;
 				&:focus {
 					box-shadow: none;
 				}
+				.navbar-toggler-icon{
+					width: 25px;
+					height: 25px;
+				}
 			}
 			ul {
 				display: block !important;
@@ -130,3 +134,4 @@ $fontRoboto: 'Roboto', sans-serif;
 		}
 	}
 }
+

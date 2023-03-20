@@ -106,6 +106,10 @@ li {
   .navbar .container .navbar-toggler:focus {
     box-shadow: none;
   }
+  .navbar .container .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
+    height: 25px;
+  }
   .navbar .container ul {
     display: block !important;
     padding: 10px 0 15px;
@@ -398,6 +402,41 @@ li {
   line-height: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .sect-2-contact .container hr {
+    margin: 30px 0;
+  }
+  .sect-2-contact .container .item-text h3 {
+    font-size: 18px;
+  }
+  .sect-2-contact .container .item-text p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .sect-2-contact .container .items-whatsapp a .icon {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .sect-2-contact .container .items-whatsapp a span {
+    font-size: 15px;
+  }
+  .sect-2-contact .container .items-whatsapp a p {
+    font-size: 14px;
+  }
+  .sect-2-contact .container .items-location {
+    margin-bottom: 80px;
+  }
+  .sect-2-contact .container .items-location h3 {
+    font-size: 18px;
+  }
+  .sect-2-contact .container .items-location a p {
+    font-size: 14px;
+  }
+  .sect-2-contact .container .items-location a .icon {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
 .container .tilte {
   margin-bottom: 25px;
 }
@@ -444,6 +483,44 @@ li {
   font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  .container .tilte {
+    margin-bottom: 15px;
+  }
+  .container .tilte h3 {
+    font-size: 23px;
+  }
+  .container .row {
+    margin-bottom: 30px;
+  }
+  .container .row .text-about {
+    margin-bottom: 60px;
+  }
+  .container .row .text-about p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .container .row .card-about {
+    margin-bottom: 20px;
+  }
+  .container .row .card-about .card {
+    padding: 20px;
+  }
+  .container .row .card-about .card .icon {
+    margin-bottom: 20px;
+    font-size: 25px;
+    padding: 10px;
+  }
+  .container .row .card-about .card .items-text .tilte-card {
+    margin-bottom: 13px;
+  }
+  .container .row .card-about .card .items-text .tilte-card h3 {
+    font-size: 17px;
+  }
+  .container .row .card-about .card .items-text .desc p {
+    font-size: 15px;
+  }
+}
 .filter-product {
   padding: 0 0 50px;
 }
@@ -636,6 +713,32 @@ li {
   font-weight: 600;
 }
 
+@media screen and (max-width: 768px) {
+  .banner-contact,
+.banner-about {
+    margin-bottom: 0;
+  }
+  .banner-contact .container .img-banner img,
+.banner-about .container .img-banner img {
+    height: 65vh;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .banner-contact .container-fluid .title-banner,
+.banner-about .container-fluid .title-banner {
+    z-index: -99;
+    position: relative;
+    height: 20vh;
+    bottom: 60px;
+  }
+  .banner-contact .container-fluid .title-banner h3,
+.banner-about .container-fluid .title-banner h3 {
+    top: 90px;
+    font-size: 25px;
+  }
+}
 .container .row .items-kategory-product:nth-child(-n+5) {
   border-right: 1px solid #bebebe;
   margin-bottom: 1px;

@@ -6,7 +6,7 @@ $fontRoboto: 'Roboto', sans-serif;
 
 // Banner Contact & About
 .banner-contact,
-.banner-about {
+	.banner-about {
 	margin-bottom: 25px;
 	.container {
 		.img-banner {
@@ -31,6 +31,57 @@ $fontRoboto: 'Roboto', sans-serif;
 				letter-spacing: 1px;
 				color: #fff;
 				font-weight: 600;
+			}
+		}
+	}
+}
+
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.banner-contact,
+		.banner-about {
+		margin-bottom: 0;
+		.container {
+			.img-banner {
+				img {
+					height: 65vh;
+					object-position: center	;
+					object-fit: cover;
+				}	
+			}
+		}
+		.container-fluid {
+			.title-banner {
+				z-index: -99;
+				position: relative;
+				height: 20vh;
+				bottom: 60px;
+				h3 {
+					top: 90px;
+					font-size: 25px;
+				}
 			}
 		}
 	}
