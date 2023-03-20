@@ -52,13 +52,9 @@ const ProductDetail = () => {
 							<span className=''>
 								<iconify-icon icon="ic:baseline-keyboard-arrow-left"></iconify-icon>
 							</span>
-							Halaman Sebelumnya</Link>
+							Previous Page</Link>
 					</div>
-					<hr className='z-[1]' />
-					<hr />
-					<hr />
 				</Container>
-
 			</div>
 
 			<div className="sect-1-items-products">
@@ -76,7 +72,6 @@ const ProductDetail = () => {
 									<h5 className='text-capitalize'>{category}</h5>
 									<hr />
 								</div>
-
 								<div className="product-name">
 									<p>Product Name</p>
 									<h5 className='text-capitalize'>{productName}</h5>
@@ -115,13 +110,13 @@ const ProductDetail = () => {
 				<Container>
 					<Row className='justify-content-evenly'>
 						<Col lg='12'>
-							<div className="d-flex align-items-center border-top border-bottom py-3 mb-5">
-								<h3 className='mb-0'>Product Lainnya</h3>
+							<div className="d-flex align-items-center border-top border-bottom py-3 mb-5 prev">
+								<h3 className='mb-0'>Other Products</h3>
 								<Link to="/product" className='link-prev nav-link ms-auto d-flex align-items-center'>
 									<span className=''>
 										<iconify-icon icon="ic:baseline-keyboard-arrow-left"></iconify-icon>
 									</span>
-									Halaman Sebelumnya</Link>
+									Prev Page</Link>
 							</div>
 						</Col>
 						<ListProduct data={productByCategory} />

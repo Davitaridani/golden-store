@@ -55,4 +55,74 @@ $colorText: #008268;
 	}
 }
 
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.filter-product {
+		padding: 0 0 50px;
+		.container {
+			.row {
+				border-left: 0;
+				border-right: 0;
+				margin: 0 ;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.filter-by {
+					padding: 5px 0;
+					column-gap: 7px;
+					h3 {
+
+						font-size: 15px;
+						display: none;
+					}
+					select {
+						padding: 2px 7px;
+						font-size: 15px;
+					}
+				}
+				.btn-search {
+					display: flex;
+					margin: 10px 0;
+					justify-content: center;
+					width: 100%;
+					input {
+						background: transparent;
+						width: 100%;
+						padding-left: 10px;
+					}
+					span {
+						padding: 3px 4px;
+						font-size: 22px;
+					}
+				}
+				.col {
+					width: 0;
+				} 
+			}
+		}
+	}
+}
+
 

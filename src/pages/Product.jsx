@@ -55,7 +55,7 @@ const Product = () => {
 			<div className="filter-product ">
 				<Container>
 					<Row>
-						<Col md="8" className='ps-0'>
+						<Col md="6" lg="8" className='ps-0'>
 							<div className="d-flex align-items-center filter-by">
 								<h3>Filter By:</h3>
 								<select onChange={handleFilter}>
@@ -67,7 +67,7 @@ const Product = () => {
 							</div>
 						</Col>
 
-						<Col md="4" className='pe-0'	>
+						<Col md="2" lg="4" className='pe-0'	>
 							<div className="btn-search">
 								<input type="text" placeholder="Search....." onChange={handleSearch} />
 								<span>

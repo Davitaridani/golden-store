@@ -121,3 +121,136 @@ $colorText: #008268;
 		}
 	}
 }
+
+@mixin responsive($breakpoint) {
+	@if $breakpoint==mobile {
+		@media screen and (max-width: 768px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==tablet {
+		@media screen and (min-width: 769px) and(max-width: 979px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==notebook {
+		@media screen and (min-width: 980px) and (max-width: 1024px) {
+			@content;
+		}
+	}
+	@else if $breakpoint==leptop {
+		@media screen and (min-width: 1025px) and (max-width: 1280px) {
+			@content;
+		}
+	}
+}
+
+@include responsive(mobile) {
+	.menu-links {
+		.container {
+			border-bottom: 1px solid #c8c8c8 !important;
+			width: 92%;
+			margin-top: 10px;
+			padding: 0 !important;
+			ul {
+				padding: 10px 0;
+				.nav-item {
+					a {
+						column-gap: 2px;
+						font-size: 15px;
+						font-weight: 500;
+						span {
+							padding: 0;
+						}
+					} 
+				}
+			}
+			.prev-page {
+				a {
+					font-size: 15px;
+					span {
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+	
+	.sect-1-items-products {
+		.container {
+			.row {
+				.product-name {
+					p {
+						font-size: 15px;
+					}
+					h3 {
+						font-size: 23px;
+					}
+				}
+				img {
+					width: 85% !important;
+				}
+				.info-product {
+					hr {
+						width: 85%;
+					}
+					.category,
+					.product-name,
+					.desc,
+					.detail {
+					padding-top: 20px;
+						p {
+							margin-bottom: 1px;
+							font-size: 15px;
+						}
+						.desc-product {
+							margin-bottom: 15px;
+						}
+						h5 {
+							margin-bottom: 20px;
+							font-size: 15px;
+						}
+						h3 {
+							line-height: 1.4;
+							margin-bottom: 20px !important;
+							font-size: 15px;
+						}
+					}
+					.icon-whatsapp {
+						padding: 20px 0 30px ;
+						a {
+							padding: 7px 17px;
+							border-radius: 7px;
+							font-size: 14px;
+							column-gap: 3px;
+							span {
+								font-size: 22px;
+							}
+						}
+					}
+				} 
+			}
+		}
+	}
+
+	.sect-2-detail-product {
+		.container {
+			.row {
+				.prev {
+					padding: 10px 0 !important;
+					h3 {
+						font-size: 16px;
+						font-weight: 600;
+					}
+					.link-prev {
+						font-size: 15px;
+						font-weight: 600;
+						span {
+							font-size: 25px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
