@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap");
 .container {
   max-width: 100% !important;
   padding: 0 20px !important;
@@ -490,34 +491,34 @@ li {
   .container .tilte h3 {
     font-size: 23px;
   }
-  .container .row {
+  .container .card-services {
     margin-bottom: 30px;
   }
-  .container .row .text-about {
+  .container .card-services .text-about {
     margin-bottom: 60px;
   }
-  .container .row .text-about p {
+  .container .card-services .text-about p {
     font-size: 15px;
     margin-bottom: 10px;
   }
-  .container .row .card-about {
+  .container .card-services .card-about {
     margin-bottom: 20px;
   }
-  .container .row .card-about .card {
+  .container .card-services .card-about .card {
     padding: 20px;
   }
-  .container .row .card-about .card .icon {
+  .container .card-services .card-about .card .icon {
     margin-bottom: 20px;
     font-size: 25px;
     padding: 10px;
   }
-  .container .row .card-about .card .items-text .tilte-card {
+  .container .card-services .card-about .card .items-text .tilte-card {
     margin-bottom: 13px;
   }
-  .container .row .card-about .card .items-text .tilte-card h3 {
+  .container .card-services .card-about .card .items-text .tilte-card h3 {
     font-size: 17px;
   }
-  .container .row .card-about .card .items-text .desc p {
+  .container .card-services .card-about .card .items-text .desc p {
     font-size: 15px;
   }
 }
@@ -582,7 +583,7 @@ li {
     border-right: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: unset;
     align-items: center;
   }
   .filter-product .container .row .filter-by {
@@ -591,30 +592,32 @@ li {
          column-gap: 7px;
   }
   .filter-product .container .row .filter-by h3 {
-    font-size: 15px;
+    font-size: 13px;
+  }
+  .filter-product .container .row .filter-by h3 span {
     display: none;
   }
   .filter-product .container .row .filter-by select {
-    padding: 2px 7px;
-    font-size: 15px;
+    padding: 2px 5px;
+    font-size: 13.5px;
   }
   .filter-product .container .row .btn-search {
+    border: 0;
     display: flex;
     margin: 10px 0;
-    justify-content: center;
-    width: 100%;
+    justify-content: end;
   }
   .filter-product .container .row .btn-search input {
     background: transparent;
     width: 100%;
     padding-left: 10px;
   }
+  .filter-product .container .row .btn-search input ::visibility {
+    font-size: 10px;
+  }
   .filter-product .container .row .btn-search span {
     padding: 3px 4px;
     font-size: 22px;
-  }
-  .filter-product .container .row .col {
-    width: 0;
   }
 }
 .menu-links .container ul {
@@ -740,14 +743,14 @@ li {
   .menu-links .container ul .nav-item a {
     -moz-column-gap: 2px;
          column-gap: 2px;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
   }
   .menu-links .container ul .nav-item a span {
     padding: 0;
   }
   .menu-links .container .prev-page a {
-    font-size: 15px;
+    font-size: 13px;
   }
   .menu-links .container .prev-page a span {
     font-size: 22px;
@@ -981,6 +984,49 @@ li {
     font-size: 15px;
   }
 }
+.container {
+  max-width: 100% !important;
+  padding: 0 20px !important;
+}
+@media screen and (min-width: 1300px) {
+  .container {
+    padding: 0 20px !important;
+    max-width: 1300px !important;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+a,
+ul,
+li {
+  font-family: "Montserrat", sans-serif;
+}
+
+* p {
+  line-height: 1.4 !important;
+  font-family: "Roboto", sans-serif !important;
+  letter-spacing: 0.3px;
+}
+
+::-moz-selection {
+  background-color: #008268;
+  color: #fff;
+}
+
+::selection {
+  background-color: #008268;
+  color: #fff;
+}
+
+.active {
+  font-weight: 800;
+  color: #008268 !important;
+}
+
 .footer .bg-gradient {
   background: linear-gradient(276deg, rgba(44, 161, 75, 0) 0%, rgba(44, 161, 75, 0.3365721289) 41%, rgba(44, 161, 75, 0.8407738095) 63%, rgb(44, 161, 75) 85%) !important;
   margin-bottom: 70px;
@@ -1020,34 +1066,43 @@ li {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.footer .sect-our-customers .container {
+  border: 2px solid #eee;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  width: 90%;
+}
+.footer .sect-our-customers .container .title {
+  padding-top: 20px;
+}
 .footer .sect-our-customers .container .title h3 {
   color: #008268;
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
-.footer .sect-our-customers .container .title hr {
-  width: auto;
-  margin: 0;
-  text-align: center;
-  color: #adadad;
+.footer .sect-our-customers .container .mySwiper {
+  padding: 20px;
 }
-.footer .sect-our-customers .container .row .mySwiper {
-  padding: 30px;
-}
-.footer .sect-our-customers .container .row .mySwiper .swiper-wrapper {
-  display: flex;
+.footer .sect-our-customers .container .mySwiper .swiper-wrapper {
   align-items: center;
+  margin-bottom: 35px;
+}
+.footer .sect-our-customers .container .mySwiper .swiper-wrapper .swiper-slide {
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
-.footer .sect-our-customers .container .row .mySwiper .swiper-wrapper .swiper-slide {
-  text-align: center;
-  margin-right: 0 !important;
-}
-.footer .sect-our-customers .container .row .mySwiper .swiper-wrapper .swiper-slide img {
-  width: 100px;
+.footer .sect-our-customers .container .mySwiper .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 90px !important;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.footer .sect-our-customers .container .mySwiper .swiper-pagination {
+  padding: 20px 0;
 }
 .footer .foot-top .items-text {
   height: 220px;
@@ -1064,6 +1119,7 @@ li {
   font-size: 15px;
   color: #5e5e5e;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 .footer .foot-top .items-text .item-menu .nav-link span {
   margin-right: 10px;
@@ -1136,34 +1192,42 @@ li {
   .footer .bg-gradient .row .img-gradient img {
     height: 320px !important;
   }
+  .footer .sect-our-customers .container {
+    border: 2px solid #eee;
+    border-left: 0;
+    border-right: 0;
+    width: 91%;
+  }
+  .footer .sect-our-customers .container .title {
+    padding-top: 20px;
+  }
   .footer .sect-our-customers .container .title h3 {
     font-size: 20px;
-    margin-bottom: 20px;
   }
-  .footer .sect-our-customers .container .title hr {
-    width: auto;
-    margin: 0;
-    text-align: center;
+  .footer .sect-our-customers .container .mySwiper {
+    padding: 20px;
   }
-  .footer .sect-our-customers .container .row .mySwiper {
-    padding: 30px;
-  }
-  .footer .sect-our-customers .container .row .mySwiper .swiper-wrapper {
-    display: flex;
+  .footer .sect-our-customers .container .mySwiper .swiper-wrapper {
     align-items: center;
+    margin-bottom: 35px;
+  }
+  .footer .sect-our-customers .container .mySwiper .swiper-wrapper .swiper-slide {
+    display: flex;
     justify-content: center;
+    align-items: center;
   }
-  .footer .sect-our-customers .container .row .mySwiper .swiper-wrapper .swiper-slide {
-    text-align: center;
-    margin-right: 0 !important;
-  }
-  .footer .sect-our-customers .container .row .mySwiper .swiper-wrapper .swiper-slide img {
-    width: 100px;
+  .footer .sect-our-customers .container .mySwiper .swiper-wrapper .swiper-slide img {
+    display: block;
+    width: 90px !important;
+    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .footer .sect-our-customers .container .mySwiper .swiper-pagination {
+    padding: 20px 0;
+  }
   .footer .foot-top {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .footer .foot-top .items-text {
     height: auto;
@@ -1171,7 +1235,7 @@ li {
     border-top: 0 !important;
     width: 95%;
     margin: 0 auto;
-    padding: 10px !important;
+    padding: 20px 7px !important;
   }
   .footer .foot-top .items-text h3 {
     font-size: 15px;
@@ -1182,7 +1246,8 @@ li {
     margin-bottom: 0;
   }
   .footer .foot-top .items-text .item-menu .nav-link {
-    padding: 0;
+    padding: 0 0 2px;
+    font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 500;
   }

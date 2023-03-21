@@ -1,4 +1,4 @@
-@use "globals";
+@import "globals";
 
 $colorText: #008268;
 
@@ -51,46 +51,47 @@ $colorText: #008268;
 		}
 	}	
 
-	// Section OurCustomer
 	.sect-our-customers {
 		.container {
+			border: 2px solid #eee;
+			border-left: 0;
+			border-right: 0;
+			border-bottom: 0;
+			width: 90%;
 			.title {
+				padding-top: 20px;
 				h3 {
 					color: $colorText;
 					font-size: 20px;
 					font-weight: 700;	
-					margin-bottom: 20px;
+					margin-bottom: 0;
 				}
-				hr {
-					width: auto;
-					margin: 0;
-					text-align: center;
-					color: #adadad;
-				}
-			}
-			.row {
 				
-				.mySwiper {
-					padding: 30px;
-					.swiper-wrapper {
+			}
+			.mySwiper {
+				padding: 20px;
+				.swiper-wrapper {
+					align-items: center;
+					margin-bottom: 35px;
+					.swiper-slide {
 						display: flex;
-						align-items: center ;
 						justify-content: center;
-						.swiper-slide {
-							text-align: center;
-							margin-right: 0 !important;
-							img {
-								width: 100px;
-								object-fit: cover;
-							}
+						align-items: center;
+						img {
+							display: block;
+							width: 90px !important;
+							height: auto;
+							object-fit: cover;
 						}
 					}
+				}
+				.swiper-pagination {
+					padding: 20px 0;
 				}
 			}
 		}
 	}
 
-	// Footer Top
 	.foot-top {
 		.items-text {
 			height: 220px;
@@ -107,6 +108,7 @@ $colorText: #008268;
 					font-size: 15px;
 					color: #5e5e5e;
 					font-weight: 500;
+					font-family: $fontRoboto;
 					span {
 						margin-right: 10px;
 						line-height: 0;
@@ -123,7 +125,6 @@ $colorText: #008268;
 		}
 	}
 
-	// Footer Bottom
 	.foot-bottom {
 		.container {
 			hr {
@@ -228,47 +229,50 @@ $colorText: #008268;
 
 		.sect-our-customers {
 			.container {
+				border: 2px solid #eee;
+				border-left: 0;
+				border-right: 0;
+				width: 91%;
 				.title {
+					padding-top: 20px;
 					h3 {
 						font-size: 20px;
-						margin-bottom: 20px;
 					}
-					hr {
-						width: auto;
-						margin: 0;
-						text-align: center;
-					}
+					
 				}
-				.row {
-					.mySwiper {
-						padding: 30px;
-						.swiper-wrapper {
+				.mySwiper {
+					padding: 20px;
+					.swiper-wrapper {
+						align-items: center;
+						margin-bottom: 35px;
+						.swiper-slide {
 							display: flex;
-							align-items: center ;
 							justify-content: center;
-							.swiper-slide {
-								text-align: center;
-								margin-right: 0 !important;
-								img {
-									width: 100px;
-									object-fit: cover;
-								}
+							align-items: center;
+							img {
+								display: block;
+								width: 90px !important;
+								height: auto;
+								object-fit: cover;
 							}
 						}
+					}
+					.swiper-pagination {
+						padding: 20px 0;
 					}
 				}
 			}
 		}
-
+		
 		.foot-top {
-			margin-top: 30px;
+			margin-top: 20px;
 			.items-text {
 				height: auto;
 				border-right: 0 !important;
 				border-top: 0 !important;
 				width: 95%;
 				margin: 0 auto;
-				padding: 10px !important;
+				padding: 20px 7px !important;
 				h3 {
 					font-size: 15px;
 					letter-spacing: .7px;
@@ -277,7 +281,8 @@ $colorText: #008268;
 				.item-menu {
 					margin-bottom: 0;
 					.nav-link {
-						padding: 0;
+						padding: 0 0 2px;
+						font-family: $fontRoboto;
 						font-size: 14px;
 						font-weight: 500;
 						span {

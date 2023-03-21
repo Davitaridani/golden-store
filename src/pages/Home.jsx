@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
-import { Navigation, Pagination, Parallax } from "swiper";
+import { Autoplay, Navigation, Pagination, Parallax } from "swiper";
 
 
 const Home = () => {
@@ -41,13 +41,19 @@ const Home = () => {
 							"--swiper-navigation-color": "#fff",
 							"--swiper-pagination-color": "#fff",
 						}}
-						speed={900}
+						speed={2000}
+						loop={true}
+						autoplay={{
+							delay: 3000,
+							disableOnInteraction: false,
+						}}
 						parallax={true}
 						pagination={{
 							clickable: true,
 						}}
+
 						navigation={true}
-						modules={[Parallax, Pagination, Navigation]}
+						modules={[Parallax, Pagination, Navigation, Autoplay]}
 						className="mySwiper"
 					>
 						<div
@@ -180,7 +186,7 @@ const Home = () => {
 				</Container>
 			</section>
 
-		</Helmet>
+		</Helmet >
 
 	)
 }

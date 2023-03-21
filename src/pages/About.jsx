@@ -36,7 +36,7 @@ const About = () => {
           </Col>
         </Row>
 
-        <Row>
+        <Row className="card-services justify-content-center">
           {
             cardAbout.map((item) => (
               <Col className="card-about" lg="4" md="6" sm="12" key={item.id}>

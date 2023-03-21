@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import products from "../assets/data/dataProducts";
 import Helmet from "../components/Helmet/Helmet";
@@ -44,7 +44,7 @@ const Product = () => {
 					<div className="img-banner">
 						<img
 							src={imgProduct}
-							alt="Image Banner"
+							alt="Banner"
 							className="img img-fluid w-100"
 						/>
 					</div>
@@ -55,9 +55,9 @@ const Product = () => {
 			<div className="filter-product ">
 				<Container>
 					<Row>
-						<Col md="6" lg="8" className='ps-0'>
+						<Col md="6" lg="8" className='ps-0 col-6'>
 							<div className="d-flex align-items-center filter-by">
-								<h3>Filter By:</h3>
+								<h3>Filter <span>By</span>:</h3>
 								<select onChange={handleFilter}>
 									<option >All Product</option>
 									<option value="fruit">Fruit</option>
@@ -67,7 +67,7 @@ const Product = () => {
 							</div>
 						</Col>
 
-						<Col md="2" lg="4" className='pe-0'	>
+						<Col md="2" lg="4" className='pe-0 ps-0 col-6'	>
 							<div className="btn-search">
 								<input type="text" placeholder="Search....." onChange={handleSearch} />
 								<span>

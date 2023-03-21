@@ -23,10 +23,43 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
 const FooterCompt = () => {
   const yearNow = new Date().getFullYear();
+
+  const imgOurCUstomer = [
+    {
+      imgUrl: logoCompany1,
+    },
+    {
+      imgUrl: logoCompany2,
+    },
+    {
+      imgUrl: logoCompany3,
+    },
+    {
+      imgUrl: logoCompany4,
+    },
+    {
+      imgUrl: logoCompany5,
+    },
+    {
+      imgUrl: logoCompany6,
+    },
+    {
+      imgUrl: logoCompany7,
+    },
+    {
+      imgUrl: logoCompany8,
+    },
+    {
+      imgUrl: logoCompany9,
+    },
+    {
+      imgUrl: logoCompany10,
+    },
+  ];
 
   return (
     <footer className="footer">
@@ -79,53 +112,39 @@ const FooterCompt = () => {
         <Container>
           <div className="title text-center">
             <h3>Our Customers</h3>
-            <hr />
           </div>
-          <Row>
-            <Col>
-              <Swiper
-                slidesPerView={5}
-                loopPreventsSliding={true}
-                spaceBetween={20}
-                pagination={{
-                  clickable: true,
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <img src={logoCompany1} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany2} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany3} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany4} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany5} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany6} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany7} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany8} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany9} alt="" className="img img-fluid" />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={logoCompany10} alt="" className="img img-fluid" />
-                </SwiperSlide>
-              </Swiper>
-            </Col>
-          </Row>
+
+          <Swiper
+            spaceBetween={10}
+            pagination={{
+              clickable: true,
+            }}
+            speed={1500}
+            loop={true}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              768: {
+                slidesPerView: 3,
+              },
+              1024: {
+                slidesPerView: 5,
+              },
+            }}
+            modules={[Pagination, Navigation, Autoplay]}
+            className="mySwiper"
+          >
+            {imgOurCUstomer.map((item, index) => (
+              <SwiperSlide key={index}>
+                <img src={item.imgUrl} alt="" className="img img-fluid" />
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </Container>
       </section>
 

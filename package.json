@@ -44,17 +44,13 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
-  "devDependencies": {
-    "tailwindcss": "^3.2.4"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Davitaridani/my-project-1-reactJS.git"
   },
   "keywords": [
     "React",
-    "Js",
-    "Portfolio",
+    "Fruits",
     "Website"
   ],
   "author": "Ahmat Davit Ari Dani",

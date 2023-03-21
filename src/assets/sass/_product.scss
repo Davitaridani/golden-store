@@ -87,39 +87,40 @@ $colorText: #008268;
 				border-right: 0;
 				margin: 0 ;
 				display: flex;
-				justify-content: center;
+				justify-content: unset;
 				align-items: center;
 				.filter-by {
 					padding: 5px 0;
 					column-gap: 7px;
 					h3 {
-
-						font-size: 15px;
-						display: none;
+						font-size: 13px;
+						span {
+							display: none;
+						}
 					}
 					select {
-						padding: 2px 7px;
-						font-size: 15px;
+						padding: 2px 5px;
+						font-size: 13.5px;
 					}
 				}
 				.btn-search {
+					border: 0;
 					display: flex;
 					margin: 10px 0;
-					justify-content: center;
-					width: 100%;
+					justify-content: end;
 					input {
 						background: transparent;
 						width: 100%;
 						padding-left: 10px;
+						::visibility {
+							font-size: 10px;
+						}
 					}
 					span {
 						padding: 3px 4px;
 						font-size: 22px;
 					}
 				}
-				.col {
-					width: 0;
-				} 
 			}
 		}
 	}

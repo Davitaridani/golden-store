@@ -113,7 +113,7 @@ const ProductDetail = () => {
 							<div className="d-flex align-items-center border-top border-bottom py-3 mb-5 prev">
 								<h3 className='mb-0'>Other Products</h3>
 								<Link to="/product" className='link-prev nav-link ms-auto d-flex align-items-center'>
-									<span className=''>
+									<span>
 										<iconify-icon icon="ic:baseline-keyboard-arrow-left"></iconify-icon>
 									</span>
 									Prev Page</Link>

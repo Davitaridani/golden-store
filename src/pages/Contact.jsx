@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="img-banner">
             <img
               src={imgContact}
-              alt="Image Banner"
+              alt="Banner"
               className="img img-fluid w-100"
             />
           </div>
