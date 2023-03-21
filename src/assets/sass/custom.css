@@ -319,6 +319,7 @@ li {
   }
   .sect-banner .container {
     height: 90vh;
+    padding: 0 !important;
   }
   .sect-banner .container .mySwiper {
     height: 85%;
@@ -1362,6 +1363,7 @@ li {
 .footer .bg-gradient .row .text-info .title h3 {
   font-size: 30px;
   font-weight: 400;
+  color: #fff;
 }
 .footer .bg-gradient .row .text-info .title h3 span {
   font-weight: 600 !important;
@@ -1490,6 +1492,7 @@ li {
   .footer .bg-gradient .row .info-sosmed .text-info .title h3 {
     font-size: 25px;
     margin-bottom: 15px;
+    color: #fff;
   }
   .footer .bg-gradient .row .info-sosmed .text-info .title h3 span {
     font-weight: 600 !important;
