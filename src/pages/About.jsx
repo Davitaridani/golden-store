@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <Container>
-        <div className="tilte text-center">
+        <div className="title text-center">
           <h3>Profile Golden</h3>
         </div>
         <Row>

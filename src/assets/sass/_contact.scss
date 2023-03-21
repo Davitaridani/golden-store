@@ -70,12 +70,12 @@ $colorText: #008268;
 
 @mixin responsive($breakpoint) {
 	@if $breakpoint==mobile {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			@content;
 		}
 	}
 	@else if $breakpoint==tablet {
-		@media screen and (min-width: 769px) and(max-width: 979px) {
+		@media screen and (min-width: 768px) and(max-width: 979px) {
 			@content;
 		}
 	}
@@ -132,6 +132,49 @@ $colorText: #008268;
 					.icon {
 						font-size: 25px;
 						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include responsive(tablet) {
+	.sect-2-contact {
+		.container {
+			hr {
+				margin: 30px 0;
+			}
+			.item-text {
+				h3 {
+					font-size: 20px;
+				}
+			}
+			.items-whatsapp {
+				a {
+					.icon {
+						font-size: 29px;
+						margin-bottom: 10px;
+					}
+					span {
+						font-size: 16px;
+					}
+					p {
+						font-size: 15px;
+					}
+				}
+			}
+			.items-location {
+				margin-bottom: 80px;
+				h3 {
+					font-size: 20px;
+				}
+				a {
+					p {
+						font-size: 15px;
+					}
+					.icon {
+						font-size: 29px;
 					}
 				}
 			}

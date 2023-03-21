@@ -57,12 +57,12 @@ $colorText: #008268;
 
 @mixin responsive($breakpoint) {
 	@if $breakpoint==mobile {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			@content;
 		}
 	}
 	@else if $breakpoint==tablet {
-		@media screen and (min-width: 769px) and(max-width: 979px) {
+		@media screen and (min-width: 768px) and(max-width: 979px) {
 			@content;
 		}
 	}
@@ -125,5 +125,20 @@ $colorText: #008268;
 		}
 	}
 }
+
+@include responsive(tablet) {
+	.filter-product {
+		.container {
+			.row {
+				.filter-by {
+					select {
+						padding: 2px 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 

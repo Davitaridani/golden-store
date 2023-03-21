@@ -43,10 +43,10 @@ const Home = () => {
 						}}
 						speed={2000}
 						loop={true}
-						autoplay={{
-							delay: 3000,
-							disableOnInteraction: false,
-						}}
+						// autoplay={{
+						// 	delay: 3000,
+						// 	disableOnInteraction: false,
+						// }}
 						parallax={true}
 						pagination={{
 							clickable: true,
@@ -147,7 +147,6 @@ const Home = () => {
 				<ListKategoryCompt />
 			</section>
 
-			{/* Section 4 Best Sellers */}
 			<section className="sect-4">
 				<Container>
 					<Row>

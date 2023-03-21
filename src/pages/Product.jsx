@@ -61,13 +61,13 @@ const Product = () => {
 								<select onChange={handleFilter}>
 									<option >All Product</option>
 									<option value="fruit">Fruit</option>
-									<option value="salad">Salad</option>
 									<option value="juice">Juice</option>
+									<option value="salad">Salad</option>
 								</select>
 							</div>
 						</Col>
 
-						<Col md="2" lg="4" className='pe-0 ps-0 col-6'	>
+						<Col md="6" lg="4" className='pe-0 ps-0 col-6'	>
 							<div className="btn-search">
 								<input type="text" placeholder="Search....." onChange={handleSearch} />
 								<span>

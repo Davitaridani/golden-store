@@ -4,7 +4,7 @@ $colorText: #008268;
 $mainColorText : #022044;
 
 .container {
-	.tilte {
+	.title {
 		margin-bottom: 25px;
 		h3 {
 			font-size: 25px;
@@ -57,12 +57,12 @@ $mainColorText : #022044;
 
 @mixin responsive($breakpoint) {
 	@if $breakpoint==mobile {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			@content;
 		}
 	}
 	@else if $breakpoint==tablet {
-		@media screen and (min-width: 769px) and(max-width: 979px) {
+		@media screen and (min-width: 768px) and(max-width: 979px) {
 			@content;
 		}
 	}
@@ -80,7 +80,7 @@ $mainColorText : #022044;
 
 @include responsive(mobile)  {
 	.container {
-		.tilte {
+		.title {
 			margin-bottom: 15px;
 			h3 {
 				font-size: 23px;
@@ -95,6 +95,50 @@ $mainColorText : #022044;
 					margin-bottom: 10px;
 				}
 			}
+			.card-about {
+				margin-bottom: 20px;
+				.card {
+					padding: 20px;
+					.icon {
+						margin-bottom: 20px;
+						font-size: 25px;
+						padding: 10px;
+					}
+					.items-text {
+						.tilte-card {
+							margin-bottom: 13px;
+							h3 {
+								font-size: 17px;
+							}
+						}
+						.desc {
+							p {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	} 
+}
+
+@include responsive(tablet)  {
+	.container {
+		.title {
+			margin-bottom: 15px;
+			h3 {
+				font-size: 23px;
+			}
+		}
+		.text-about {
+				margin-bottom: 60px !important;
+				max-width: 90%;
+				margin: 0 auto ;
+			}
+		.card-services {
+			margin-bottom: 30px;
+			
 			.card-about {
 				margin-bottom: 20px;
 				.card {

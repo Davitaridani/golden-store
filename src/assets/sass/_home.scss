@@ -157,12 +157,12 @@ $colorText: #008268;
 // Media Query
 @mixin responsive($breakpoint) {
 	@if $breakpoint==mobile {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			@content;
 		}
 	}
 	@else if $breakpoint==tablet {
-		@media screen and (min-width: 769px) and(max-width: 979px) {
+		@media screen and (min-width: 768px) and(max-width: 979px) {
 			@content;
 		}
 	}
@@ -282,4 +282,92 @@ $colorText: #008268;
 		}
 	}
 
+}
+
+@include responsive(tablet) {
+	.container {
+		padding: 0 15px !important;
+	}
+	.sect-banner{
+		.container {
+			height: 80vh;
+			.mySwiper {
+				height: 85%;
+				.swiper-slide {
+					padding: 0 100px;
+					align-items: center;
+					position: relative;
+					bottom: 0;
+					.text-banner {
+						h3 {
+							font-size: 35px;
+						}
+						p {
+							max-width: none;
+							margin-bottom: 30px;
+							max-width: 80%;
+						}
+						a {
+							padding: 9px 17px;
+							font-size: 14px;
+							column-gap: 3px;
+							span {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.sect-2 {
+		margin-top: -50px;
+		padding: 0 0 50px ;
+		.container {
+			.row {
+				.items-text {
+					.title {
+						margin-bottom: 20px;
+						h1 {
+							font-size: 25px;
+						}
+					}
+					.desc {
+						width: 85%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+
+	.sect-3 {
+		margin-bottom: 50px;
+		.title {
+			margin-bottom: 30px;
+			h3 {
+				font-size: 18px;
+				font-weight: 600;
+			}
+		}
+	}
+
+		.sect-4,.sect-5, .sect-6 {
+		margin-bottom: 30px;
+		.container {
+			.row {
+				.title {
+					h3 {
+						font-size: 23px;
+						font-weight: 700;	
+					}
+					hr {
+						width: 200px;
+						margin: 3px auto;
+					}
+				}
+			}
+		}
+	}
 }

@@ -43,12 +43,12 @@ $mainColorText : #022044;
 // Media Query
 @mixin responsive($breakpoint) {
 	@if $breakpoint==mobile {
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			@content;
 		}
 	}
 	@else if $breakpoint==tablet {
-		@media screen and (min-width: 769px) and(max-width: 979px) {
+		@media screen and (min-width: 768px) and(max-width: 979px) {
 			@content;
 		}
 	}
@@ -87,6 +87,18 @@ $mainColorText : #022044;
 				background-color: $colorText;
 				padding: 6px 17px;
 				font-size: 15px;
+			}
+		}
+	}
+}
+
+@include responsive(tablet) {
+	.card-products {
+		margin-bottom: 40px;
+		.img-product {
+			border-radius: 5px;
+			img {
+				height: 320px;
 			}
 		}
 	}
