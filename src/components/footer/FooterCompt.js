@@ -24,6 +24,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import ScrollToTop from "../UI/ScrollToTop";
 
 const FooterCompt = () => {
   const yearNow = new Date().getFullYear();
@@ -247,6 +248,8 @@ const FooterCompt = () => {
           </div>
         </Container>
       </section>
+
+      <ScrollToTop />
     </footer>
   );
 };
