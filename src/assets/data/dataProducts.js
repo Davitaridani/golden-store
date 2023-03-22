@@ -67,6 +67,7 @@ const dataProducts = [
     price: "35.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus.",
+    delayAos: 200,
   },
   {
     id: "03",
@@ -78,6 +79,7 @@ const dataProducts = [
     weight: "1 Kg: 4-6 unit",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in.",
+    delayAos: 400,
   },
   {
     id: "04",
@@ -89,6 +91,7 @@ const dataProducts = [
     weight: "1 Kg: 5-8 unit",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 550,
   },
   {
     id: "05",
@@ -108,6 +111,7 @@ const dataProducts = [
     price: "23.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae architecto nemo neque aliquid ad similique beatae, mollitia sunt blanditiis a..",
+    delayAos: 200,
   },
   {
     id: "07",
@@ -118,6 +122,7 @@ const dataProducts = [
     price: "37.500",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque incidunt quod sunt nemo velit dignissimos, adipisci voluptatem voluptatibus minima officia quis modi dolores repellendus illum sapiente iure quisquam cum, nesciunt laudantium cupiditate est! Saepe, facilis?",
+    delayAos: 400,
   },
   {
     id: "08",
@@ -128,6 +133,7 @@ const dataProducts = [
     price: "23.000",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ex dolor iste asperiores earum voluptatum, qui molestiae aut impedit alias corporis perspiciatis ab.",
+    delayAos: 550,
   },
 
   {
@@ -150,6 +156,7 @@ const dataProducts = [
     price: "34.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, itaque dolorum. Exercitationem expedita blanditiis nesciunt aspernatur, tempore hic voluptates quos voluptatibus? Perspiciatis expedita, molestias debitis hic et cum nesciunt. Commodi ea dolore explicabo nobis ipsa repellat, illum consequatur deserunt quaerat. Neque pariatur accusamus minima ab!.",
+    delayAos: 200,
   },
   {
     id: "11",
@@ -161,6 +168,7 @@ const dataProducts = [
     weight: "1 Kg: 4-7 unit",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minus ipsum sit?",
+    delayAos: 400,
   },
   {
     id: "12",
@@ -171,6 +179,7 @@ const dataProducts = [
     price: "28.000",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sequi libero at id voluptatibus veritatis totam autem nemo enim qui esse, sint eius! Consequuntur, molestiae nam autem beatae impedit enim at. Consectetur?",
+    delayAos: 550,
   },
   {
     id: "13",
@@ -191,6 +200,7 @@ const dataProducts = [
     price: "34.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit officiis facere consequuntur aliquam expedita quae dolores ipsum in accusantium similique ratione nemo nulla tempora quia earum perspiciatis quos, tempore veniam impedit ullam harum. Necessitatibus quia ea harum consectetur fugit eligendi quasi voluptates veritatis hic ab.",
+    delayAos: 200,
   },
   {
     id: "15",
@@ -201,6 +211,7 @@ const dataProducts = [
     price: "55.000",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. At iure molestiae ut facere officia, sint animi accusantium, eius tenetur nostrum laborum?",
+    delayAos: 400,
   },
   {
     id: "16",
@@ -212,6 +223,7 @@ const dataProducts = [
     weight: "1 Kg: 4-7 unit",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi excepturi autem voluptatum neque delectus fugit exercitationem dignissimos commodi? Porro doloremque soluta mollitia doloribus ipsum numquam, odit accusamus dignissimos voluptate quod blanditiis repudiandae autem inventore nam maiores minima. Dicta praesentium, maxime ullam totam rerum necessitatibus?",
+    delayAos: 550,
   },
   {
     id: "17",
@@ -232,6 +244,7 @@ const dataProducts = [
     weight: "1 Kg: 2-4",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde repellendus animi libero, praesentium sint, quos sequi eius modi a, harum id autem iste tempore. Ducimus, itaque unde distinctio enim eum aperiam!",
+    delayAos: 200,
   },
   {
     id: "19",
@@ -242,6 +255,7 @@ const dataProducts = [
     weight: "1 Kg: 15-30 Unit",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id voluptas officia sequi quam accusantium.",
+    delayAos: 400,
   },
   {
     id: "20",
@@ -251,6 +265,7 @@ const dataProducts = [
     price: "58.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum id voluptas officia sequi quam accusantium.",
+    delayAos: 550,
   },
   {
     id: "21",
@@ -271,6 +286,7 @@ const dataProducts = [
     price: "34.000",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam atque eos, nesciunt in earum iste hic iure natus numquam voluptatem quia alias ea omnis nam ducimus commodi? Sapiente est tempora autem.",
+    delayAos: 200,
   },
   {
     id: "23",
@@ -280,6 +296,7 @@ const dataProducts = [
     price: "18.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 400,
   },
   {
     id: "24",
@@ -289,6 +306,7 @@ const dataProducts = [
     price: "10.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi quos sint.",
+    delayAos: 550,
   },
   {
     id: "25",
@@ -307,6 +325,7 @@ const dataProducts = [
     price: "23.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur, laboriosam..",
+    delayAos: 200,
   },
   {
     id: "27",
@@ -316,6 +335,7 @@ const dataProducts = [
     price: "67.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 400,
   },
   {
     id: "28",
@@ -325,6 +345,8 @@ const dataProducts = [
     price: "110.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 550,
+    delayAos: 550,
   },
   {
     id: "29",
@@ -343,6 +365,7 @@ const dataProducts = [
     price: "70.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 200,
   },
   // Product Jucie
   {
@@ -353,6 +376,7 @@ const dataProducts = [
     price: "35.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 400,
   },
   {
     id: "33",
@@ -362,6 +386,7 @@ const dataProducts = [
     price: "12.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 550,
   },
   {
     id: "34",
@@ -380,6 +405,7 @@ const dataProducts = [
     price: "50.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 200,
   },
   {
     id: "36",
@@ -389,6 +415,7 @@ const dataProducts = [
     price: "15.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 400,
   },
   {
     id: "37",
@@ -398,6 +425,7 @@ const dataProducts = [
     price: "30.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 550,
   },
   {
     id: "38",
@@ -416,6 +444,7 @@ const dataProducts = [
     price: "25.000",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repellendus voluptate animi pariatur soluta quis in repellat atque quos sint.",
+    delayAos: 300,
   },
 ];
 

@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import products from "../assets/data/dataProducts";
 import Helmet from "../components/Helmet/Helmet";
 import ListProduct from '../components/UI/ListProduct';
 import SectionBanner from "../components/UI/SectionBanner";
 import imgProduct from "../assets/img/banner-product.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Product = () => {
 
@@ -36,12 +38,19 @@ const Product = () => {
 		setDataProduct(resultProduct)
 	}
 
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
 	return (
 		<Helmet title="Product">
-
 			<div className="banner-contact">
 				<Container>
-					<div className="img-banner">
+					<div className="img-banner"
+						data-aos="zoom-in-down"
+						data-aos-duration="1500"
+						data-aos-delay="200"
+						data-aos-easing="ease-in-sine">
 						<img
 							src={imgProduct}
 							alt="Banner"

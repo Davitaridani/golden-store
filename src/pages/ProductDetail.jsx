@@ -8,8 +8,6 @@ import ListProduct from '../components/UI/ListProduct';
 
 const ProductDetail = () => {
 
-
-
 	const { id } = useParams();
 	const product = products.find(item => item.id === id);
 	const { imgUrl, productName, category, price, weight, description } =
@@ -77,7 +75,6 @@ const ProductDetail = () => {
 									<h5 className='text-capitalize'>{productName}</h5>
 									<hr />
 								</div>
-
 								<div className="desc ">
 									<p>Product Description</p>
 									<div className="w-75 mx-auto">
@@ -85,7 +82,6 @@ const ProductDetail = () => {
 									</div>
 									<hr />
 								</div>
-
 								<div className="detail">
 									<p>Packing Detail</p>
 									<h5 className='mb-0'>Price: Rp. {price}</h5>
@@ -123,7 +119,6 @@ const ProductDetail = () => {
 					</Row>
 				</Container>
 			</div>
-
 
 		</Helmet >
 	)

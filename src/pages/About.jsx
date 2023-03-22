@@ -1,17 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import cardAbout from "../assets/data/dataAbout";
 import SectionBanner from "../components/UI/SectionBanner";
 import imgAbout from "../assets/img/img-about.jpg";
 import Helmet from "../components/Helmet/Helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <Helmet title="About">
 
-      <div className="banner-about">
+      <div className="banner-about" >
         <Container>
-          <div className="img-banner">
+          <div className="img-banner"
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine"
+          >
             <img
               src={imgAbout}
               alt="Banner"
@@ -40,8 +52,13 @@ const About = () => {
           {
             cardAbout.map((item) => (
               <Col className="card-about" lg="4" md="6" sm="12" key={item.id}>
-                <div className="card border-0 text-center">
-                  <div className="icon mx-auto">
+                <div className="card border-0 text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay={item.delayAos}
+                  data-aos-offset="200"
+                >
+                  <div className="icon mx-auto" data-aos="zoom-in" data-aos-delay={item.delayIcon} data-aos-duration="1000" data-aos-offset="200">
                     <iconify-icon className="" icon={item.icon}></iconify-icon>
                   </div>
                   <div className="items-text">

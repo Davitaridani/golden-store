@@ -27,8 +27,6 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import ScrollToTop from "../UI/ScrollToTop";
 
 const FooterCompt = () => {
-  const yearNow = new Date().getFullYear();
-
   const imgOurCUstomer = [
     {
       imgUrl: logoCompany1,
@@ -238,7 +236,7 @@ const FooterCompt = () => {
             </Col>
             <Col className=" d-flex align-items-center justify-content-end">
               <p className="mb-0 text-end">
-                Copyright © {yearNow} GoldenStore.id All rights reserved.
+                Copyright © 2023 GoldenStore.id All rights reserved.
               </p>
             </Col>
           </Row>

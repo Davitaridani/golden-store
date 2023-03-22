@@ -1,17 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SectionBanner from "../components/UI/SectionBanner";
 import imgContact from "../assets/img/img-contact.jpg";
 import Helmet from "../components/Helmet/Helmet";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Helmet title="Contact">
 
       <div className="banner-contact">
         <Container>
-          <div className="img-banner">
+          <div className="img-banner"
+            data-aos="zoom-in-down"
+            data-aos-duration="1500"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-sine">
             <img
               src={imgContact}
               alt="Banner"

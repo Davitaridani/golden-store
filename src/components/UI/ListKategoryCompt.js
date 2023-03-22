@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import producstIcon from "../../assets/data/product";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ListKategoryProductCompt = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <Container>
@@ -14,7 +20,13 @@ const ListKategoryProductCompt = () => {
               key={item.id}
             >
               <div className="icon-product">
-                <img src={item.imgUrl} alt="" />
+                <img
+                  src={item.imgUrl}
+                  alt=""
+                  data-aos="zoom-in"
+                  data-aos-duration={item.durationAos}
+                  data-aos-delay={item.delayAos}
+                />
               </div>
               <div className="name-product">
                 <h3>{item.productName}</h3>

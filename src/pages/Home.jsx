@@ -13,6 +13,11 @@ import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Navigation, Pagination, Parallax } from "swiper";
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init();
+
 
 const Home = () => {
 
@@ -29,6 +34,11 @@ const Home = () => {
 		setBestSellers(filterBestSellers)
 		setNewProduct(filterNewProduct)
 		setProductLainnya(filterProductLainnya)
+	}, [])
+
+	// AOS
+	useEffect(() => {
+		AOS.init();
 	}, [])
 
 	return (
