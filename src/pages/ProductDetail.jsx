@@ -21,7 +21,7 @@ const ProductDetail = () => {
 	}, [product])
 
 	const navLinks = [
-		{ path: "/home", display: "Home" },
+		{ path: "/", display: "Home" },
 		{ path: "/product", display: "Product" },
 		{ path: `/product/${id}`, display: `${productName}` },
 	]

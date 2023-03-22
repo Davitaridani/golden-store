@@ -17,7 +17,7 @@ const CardProduct = ({ item }) => {
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay={item.delayAos}
-          data-aos-offset="250"
+          data-aos-offset="100"
         >
           <img
             src={item.imgUrl}
@@ -29,7 +29,7 @@ const CardProduct = ({ item }) => {
           <div className="product-title">
             <h3 className="text-capitalize">{item.productName}</h3>
           </div>
-          <Link className="btn btn-card" to={`/product/${item.id}`}>
+          <Link className="btn-card" to={`/product/${item.id}`}>
             Detail Product
           </Link>
         </div>

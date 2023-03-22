@@ -35,7 +35,9 @@ $mainColorText : #022044;
 			color: #fff;
 			font-weight: 600;
 			background-color: $colorText;
-			padding: 6px 17px;
+			padding: 7px 17px;
+			text-decoration: none;
+			border-radius: 5px;
 		}
 	}
 }
@@ -76,17 +78,18 @@ $mainColorText : #022044;
 				object-fit: contain;
 				transform: scale(1);
 				transition: 0.4s ease-in-out;
+				border-radius: 5px;
 			}
 		}
 		.card-info {
-			
 			.btn-card {
 				border: 0;
 				color: #fff;
 				font-weight: 600;
 				background-color: $colorText;
-				padding: 6px 17px;
+				padding: 7.5px 17px;
 				font-size: 15px;
+				border-radius: 5px;
 			}
 		}
 	}

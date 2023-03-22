@@ -193,7 +193,7 @@ li {
   left: 0;
   top: 0;
   width: 130%;
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-image: linear-gradient(rgba(187, 187, 187, 0), rgba(58, 58, 58, 0.562)), url("../img/banner-2.jpg");
@@ -319,11 +319,10 @@ li {
     padding: 0 15px !important;
   }
   .sect-banner .container {
-    height: 90vh;
     padding: 0 !important;
   }
   .sect-banner .container .mySwiper {
-    height: 85%;
+    height: 95vh;
   }
   .sect-banner .container .mySwiper .swiper-slide {
     font-size: 18px;
@@ -356,16 +355,17 @@ li {
     font-size: 15px;
   }
   .sect-banner .container .swiper-pagination {
-    bottom: 100px;
+    bottom: 125px;
     padding-left: 22px;
   }
   .sect-banner .container .swiper-pagination .swiper-pagination-bullet {
-    height: 9px;
-    width: 9px;
+    height: 10px;
+    width: 10px;
     opacity: 0.7;
+    margin: 0 5px;
   }
   .sect-2 {
-    margin-top: -50px;
+    margin-top: 90px;
     padding: 0 0 50px;
   }
   .sect-2 .container .row .items-text .title {
@@ -409,7 +409,7 @@ li {
     height: 80vh;
   }
   .sect-banner .container .mySwiper {
-    height: 85%;
+    height: 96vh;
   }
   .sect-banner .container .mySwiper .swiper-slide {
     padding: 0 100px;
@@ -434,8 +434,18 @@ li {
   .sect-banner .container .mySwiper .swiper-slide .text-banner a span {
     font-size: 15px;
   }
+  .sect-banner .container .swiper-pagination {
+    bottom: 150px;
+    text-align: start;
+    padding-left: 100px;
+  }
+  .sect-banner .container .swiper-pagination .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+  }
   .sect-2 {
-    margin-top: -50px;
+    margin-top: 170px;
     padding: 0 0 50px;
   }
   .sect-2 .container .row .items-text .title {
@@ -1225,7 +1235,7 @@ li {
   }
   .banner-contact .container .img-banner img,
 .banner-about .container .img-banner img {
-    height: 65vh;
+    height: 80vh;
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
@@ -1235,12 +1245,13 @@ li {
 .banner-about .container-fluid .title-banner {
     z-index: -99;
     position: relative;
-    height: 20vh;
-    bottom: 60px;
+    height: 24vh;
+    bottom: 53px;
   }
   .banner-contact .container-fluid .title-banner h3,
 .banner-about .container-fluid .title-banner h3 {
-    top: 90px;
+    top: 85px;
+    margin-bottom: 0;
     font-size: 25px;
   }
 }
@@ -1251,7 +1262,7 @@ li {
   }
   .banner-contact .container .img-banner img,
 .banner-about .container .img-banner img {
-    height: 65vh;
+    height: 80vh;
     -o-object-position: center;
        object-position: center;
     -o-object-fit: cover;
@@ -1261,7 +1272,7 @@ li {
 .banner-about .container-fluid .title-banner {
     z-index: -99;
     position: relative;
-    height: 20vh;
+    height: 23vh;
     bottom: 60px;
   }
   .banner-contact .container-fluid .title-banner h3,
@@ -1353,7 +1364,9 @@ li {
   color: #fff;
   font-weight: 600;
   background-color: #008268;
-  padding: 6px 17px;
+  padding: 7px 17px;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1369,14 +1382,16 @@ li {
        object-fit: contain;
     transform: scale(1);
     transition: 0.4s ease-in-out;
+    border-radius: 5px;
   }
   .card-products .card-info .btn-card {
     border: 0;
     color: #fff;
     font-weight: 600;
     background-color: #008268;
-    padding: 6px 17px;
+    padding: 7.5px 17px;
     font-size: 15px;
+    border-radius: 5px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 979px) {
@@ -1476,7 +1491,7 @@ li {
 @media screen and (max-width: 767px) {
   .btn-scroll-to-top .container button {
     bottom: 15px;
-    right: 2.5%;
+    right: 3%;
   }
   .btn-scroll-to-top .container button span {
     font-size: 23px;

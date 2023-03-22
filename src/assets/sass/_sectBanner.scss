@@ -66,7 +66,7 @@ $fontRoboto: 'Roboto', sans-serif;
 		.container {
 			.img-banner {
 				img {
-					height: 65vh;
+					height: 80vh;
 					object-position: center	;
 					object-fit: cover;
 				}	
@@ -76,10 +76,11 @@ $fontRoboto: 'Roboto', sans-serif;
 			.title-banner {
 				z-index: -99;
 				position: relative;
-				height: 20vh;
-				bottom: 60px;
+				height: 24vh;
+				bottom: 53px;
 				h3 {
-					top: 90px;
+					top: 85px;
+					margin-bottom: 0;
 					font-size: 25px;
 				}
 			}
@@ -94,7 +95,7 @@ $fontRoboto: 'Roboto', sans-serif;
 		.container {
 			.img-banner {
 				img {
-					height: 65vh;
+					height: 80vh;
 					object-position: center	;
 					object-fit: cover;
 				}	
@@ -104,7 +105,7 @@ $fontRoboto: 'Roboto', sans-serif;
 			.title-banner {
 				z-index: -99;
 				position: relative;
-				height: 20vh;
+				height: 23vh;
 				bottom: 60px;
 				h3 {
 					top: 90px;

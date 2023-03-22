@@ -6,7 +6,7 @@ import imgLogo from "../../assets/img/logo.png";
 
 const NavbarCompt = () => {
   const nav_link = [
-    { path: "home", display: "Home" },
+    { path: "/", display: "Home" },
     { path: "about", display: "About" },
     { path: "product", display: "Product" },
     { path: "contact", display: "Contact" },
@@ -16,7 +16,7 @@ const NavbarCompt = () => {
     <Navbar className="sticky-top" bg="light" expand="lg">
       <Container>
         <Navbar.Brand>
-          <Link to="home" className="nav-link p-0 d-flex align-items-center">
+          <Link to="/" className="nav-link p-0 d-flex align-items-center">
             <img src={imgLogo} alt="logo Navbar" />
             <h3>
               Golden <span>Store</span>
