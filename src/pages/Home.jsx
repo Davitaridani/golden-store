@@ -98,7 +98,7 @@ const Home = () => {
 								</h3>
 								<div className="text" data-swiper-parallax="-200">
 									<p>
-										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores nesciunt quas officiis omnis doloribus harum cumque! Sint assumenda voluptatibus dicta architecto minus fugit porro animi consequatur ducimus aperiam optio eum ad, voluptate pariatur officiis quisquam vel et!
+										Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores nesciunt quas officiis omnis doloribus harum cumque! Sint assumenda voluptatibus dicta architecto minus fugit.
 									</p>
 								</div>
 								<div className="link d-flex align-items-center">
